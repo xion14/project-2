@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="DESC_STATUS_NETWORK">Connection Error</string>
+    <string name="DESC_STATUS_EMPTY">Data Empty</string>
+    <string name="SIGN_LOADING">Loading</string>
+    <string name="DESC_STATUS_DATA_COMPLETE">Data Complete</string>
+    <string name="SIGN_ERROR_NETWORK">Failed to get data</string>
+    <string name="SIGN_ERROR_NO_DATA">Data is empty</string>
+    <string name="SIGN_DATA_COMPLETE">All Data have been displayed</string>
+    <string name="SIGN_SAVED_CONTENT">Success put favourite</string>
+    <string name="SIGN_UNSAVED_CONTENT">Item removed from favourite</string>
+    <string name="favourite">Favourite</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
+    <string name="duration">Duration</string>
+    <string name="production">Production</string>
+    <string name="ratingage">Rating Age</string>
+    <string name="rating">Rating</string>
+    <string name="budget">Budget</string>
+    <string name="releasedate">Release Date</string>
+    <string name="openurl">Open URL</string>
+
+</resources>
