@@ -1,0 +1,424 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_home_button_pesan_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_margin_normal_thin"
+        android:layout_marginRight="@dimen/padding_margin_normal_thin"
+        android:layout_marginBottom="@dimen/padding_margin_normal"
+        android:background="?attr/selectableItemBackground"
+        android:baselineAligned="false"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_margin_normal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_pesanan_accepted_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Name"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/normal_font_size"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/gotham_bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_margin_thin"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_pesanan_accepted_nama_laundry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/view_holder_pesanan_accepted_delete"
+                    android:padding="@dimen/padding_margin_normal_thin"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorRed1"
+                    android:text="X"
+                    android:textSize="@dimen/medium_large_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></TextView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Detail User"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/gotham_bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_nama_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_hp_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_alamat_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_kurir_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Detail Pesanan"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/gotham_bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:text="@string/silahkantransfer"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_bank"
+                        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BCA"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/gotham_bold" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_pesanan_accepted_rekening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="123456"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/gotham_bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:text="@string/abaikan"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/buttonUploadPembayaran"
+                        android:layout_marginRight="@dimen/padding_margin_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_margin_normal"
+                        android:background="@drawable/background_rounded_green">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                             android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/padding_margin_normal"
+                            android:text="@string/uploadbukti"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+
+                        android:alpha="0.8"
+                        android:layout_marginLeft="@dimen/padding_margin_normal"
+                        android:id="@+id/buttonLihatPembayaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_margin_normal"
+                        android:background="@drawable/background_rounded_green">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/padding_margin_normal"
+                            android:text="@string/lihatbukti"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/holder_pesanan_accepted_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:background="@drawable/background_rounded_green">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/holder_pesanan_accepted_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/padding_margin_normal"
+                    android:text="@string/status"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/normal_font_size"
+
+                    app:fontFamily="@font/gotham_bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/holder_pesanan_accepted_change_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:background="@drawable/background_rounded_green">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/holder_pesanan_accepted_change_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/padding_margin_normal"
+                    android:text="@string/tekanuntukproses"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/normal_font_size"
+
+                    app:fontFamily="@font/gotham_bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

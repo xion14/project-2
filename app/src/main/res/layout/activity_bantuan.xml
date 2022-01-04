@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".feature.userlayer.activity.ui.BantuanActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view_content_detail_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/view_content_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="snap"
+            app:titleTextColor="@color/color_text"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+
+        android:layout_margin="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/large_font_size"
+        android:fontFamily="@font/gotham_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/panduan"
+        android:textColorHint="@color/color_text"
+        android:textColor="@color/color_text" />
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_medium_font_size"
+        android:fontFamily="@font/gotham_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Silahkan pilih laundry yang ingin anda pesan"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Jika sudah memilih laundry silahkan pilih pesan dan tunggu konfirmasi dari pihak laundry"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Jika sudah di konfirmasi pihak laundry, pesanan anda akan di proses"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Jika pesanan anda telah selesai di proses, maka transaksi anda telah selesai"
+        android:textColor="@color/color_text" />
+
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_medium_font_size"
+        android:fontFamily="@font/gotham_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/laundry"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Silahkan memilih menu lihat pesanan untuk melihat pesanan laundry anda"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Jika anda sudah mengkonfirmasi pesanan laundry maka list pesanan akan masuk ke menu proses"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:layout_marginTop="@dimen/padding_margin_normal_thin"
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_font_size"
+        android:fontFamily="@font/gotham_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Dan jika selanjutnya jika pesanan anda telah selesai anda proses maka akan masuk ke menu selesai"
+        android:textColor="@color/color_text" />
+</LinearLayout>

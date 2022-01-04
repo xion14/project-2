@@ -1,0 +1,452 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_collection_parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="UnusedAttribute">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view_content_detail_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/view_content_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="snap"
+            app:titleTextColor="@color/color_text"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:padding="@dimen/padding_margin_normal"
+            android:layout_marginTop="@dimen/padding_margin_normal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivImageRegister"
+                android:layout_width="105dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile_colour"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/padding_margin_normal"
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:layout_gravity="center"
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_rounded_green">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_margin="@dimen/padding_margin_normal"
+                    android:textSize="@dimen/normal_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/ganti_foto"
+                    android:textColor="@color/colorWhite"
+                    app:fontFamily="@font/gotham_bold" />
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/nama"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/alamatlaundry"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaNoHP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/nohandphone"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+
+            <TextView
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_marginBottom="@dimen/padding_margin_normal_thin"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kurir"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textColor="@color/color_text"
+                    android:id="@+id/radioTersedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioTersedia"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:textColor="@color/color_text"
+                    android:id="@+id/radioTakTersedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioTakTersedia" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/gotham_book"
+                android:hint="@string/tambahharga"
+                android:inputType="text"
+                android:textColor="@color/color_text"
+                android:textColorHint="@color/color_text"
+                android:textSize="@dimen/normal_smaller_font_size" />
+
+
+            <EditText
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:id="@+id/etRegisJasaHarga"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/gotham_book"
+                android:hint="@string/nama"
+                android:inputType="text"
+                android:textSize="@dimen/normal_smaller_font_size" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/gotham_book"
+                    android:gravity="center"
+                    android:hint="@string/reguler"
+                    android:inputType="text"
+                    android:textColor="@color/color_text"
+                    android:textColorHint="@color/color_text"
+                    android:textSize="@dimen/normal_smaller_font_size" />
+
+                <EditText
+                    android:id="@+id/etRegisJasaReguler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:hint="@string/harga"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_smaller_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/gotham_book"
+                    android:gravity="center"
+                    android:hint="@string/express"
+                    android:inputType="text"
+                    android:textColor="@color/color_text"
+                    android:textColorHint="@color/color_text"
+                    android:textSize="@dimen/normal_smaller_font_size" />
+
+                <EditText
+                    android:id="@+id/etRegisJasaExpress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:hint="@string/harga"
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_smaller_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/gotham_book"
+                android:gravity="center"
+                android:hint="@string/tipe"
+                android:inputType="text"
+                android:textColor="@color/color_text"
+                android:textColorHint="@color/color_text"
+                android:textSize="@dimen/normal_smaller_font_size" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:id="@+id/radioHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioKg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radioKg"
+                    android:textColor="@color/color_text" />
+
+                <RadioButton
+                    android:id="@+id/radioPc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioPc"
+                    android:textColor="@color/color_text" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaNamaBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/bank"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etRegisJasaRekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/rekening"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_text"
+                ></View>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_marginTop="@dimen/padding_margin_medium"
+                android:id="@+id/view_register_laundry_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_rounded_green">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_margin="@dimen/padding_margin_normal"
+                    android:textSize="@dimen/normal_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/daftar"
+                    android:textColor="@color/colorWhite"
+                    app:fontFamily="@font/gotham_bold" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/view_login_daftar"
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_black"
+                app:fontFamily="@font/gotham_bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

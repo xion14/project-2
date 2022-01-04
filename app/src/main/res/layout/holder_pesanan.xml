@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_margin_normal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_edit_harga_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/normal_font_size"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/gotham_bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_margin_thin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_edit_harga_reguler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/view_holder_edit_harga_express"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="BBCA"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        app:fontFamily="@font/gotham_book" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:id="@+id/view_holder_pesanan_reguler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/padding_margin_normal_thin"
+                        android:background="@drawable/background_rounded_gray">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_margin_normal_thin"
+                            android:text="Regular"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/small_font_size"
+
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:id="@+id/view_holder_pesanan_express"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/padding_margin_normal_thin"
+                        android:background="@drawable/background_rounded_green">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_margin_normal_thin"
+                            android:text="Express"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/small_font_size"
+
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/view_holder_pesanan_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_uncheck"></ImageView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

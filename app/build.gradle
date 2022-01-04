@@ -7,7 +7,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "id.com.android.moviedb"
+        applicationId "id.com.android.laundry"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -54,6 +54,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'com.google.android.material:material:1.2.0-alpha01'
 
+    implementation 'com.amitshekhar.android:android-networking:1.0.1'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
@@ -77,9 +79,14 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.24.5'
     testImplementation 'org.mockito:mockito-inline:2.13.0'
     androidTestImplementation 'org.mockito:mockito-android:2.24.5'
+    implementation "de.hdodenhof:circleimageview:2.1.0"
 
     implementation 'androidx.room:room-runtime:2.0.0'
     kapt 'androidx.room:room-compiler:2.0.0'
+    implementation "com.squareup.picasso:picasso:${rootProject.ext.picassoImageVersion}"
+
+    implementation 'com.fxn769:pix:1.0.5'
+
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 

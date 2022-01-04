@@ -1,16 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.com.android.weatherfinder">
+    package="id.com.android.laundry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <application
-        android:name="id.com.android.weatherfinder.controller.ControllerApplication"
+        android:name=".controller.ControllerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.TestWeather">
-        <activity android:name="id.com.android.weatherfinder.feature.userlayer.activity.ui.SplashActivity">
+        android:supportsRtl="true">
+        <activity android:name=".feature.userlayer.activity.ui.BantuanActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".feature.userlayer.activity.ui.EditUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.EditAdminActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.ListUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.FullImageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.TransactionChooseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.TransactionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.PesananUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.DetailPesananActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.ListPesananLaundryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.LaundryDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.PesanLaundryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.ListLaundryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.EditHargaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.RegisterLaundryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.userlayer.activity.ui.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

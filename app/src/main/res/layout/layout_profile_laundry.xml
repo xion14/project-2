@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_user"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/etProfileUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/username"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+
+
+
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/etProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/nama"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+
+        <TextView
+
+            android:layout_margin="@dimen/padding_margin_normal"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/normal_smaller_font_size"
+            android:fontFamily="@font/gotham_book"
+            android:id="@+id/tvProfileDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tanggallahir"
+            android:textColorHint="@color/color_text"
+            android:textColor="@color/color_text"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/tvProfileGender"
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:background="@color/colorWhite"
+            android:textSize="@dimen/normal_smaller_font_size"
+            android:fontFamily="@font/gotham_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/color_text"
+            android:inputType="text" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProfileAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/gotham_book"
+                android:hint="@string/alamat"
+                android:inputType="text"
+                android:textSize="@dimen/normal_smaller_font_size" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/etProfileHandphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/nohandphone"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:id="@+id/rvProfileLaundry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:paddingBottom="@dimen/padding_margin_normal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/padding_margin_normal"
+                    android:layout_marginRight="@dimen/padding_margin_normal"
+                    android:layout_marginTop="@dimen/padding_margin_medium"
+                    android:paddingTop="@dimen/padding_margin_normal"
+                    android:paddingBottom="@dimen/padding_margin_normal"
+                    android:paddingEnd="@dimen/padding_margin_normal"
+                    android:paddingStart="@dimen/padding_margin_normal"
+                    android:id="@+id/profileBtnSimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/background_rounded_green">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/editharga"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/normal_font_size"
+                        app:fontFamily="@font/gotham_bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/padding_margin_normal"
+                    android:layout_marginRight="@dimen/padding_margin_normal"
+                    android:layout_marginTop="@dimen/padding_margin_medium"
+                    android:paddingTop="@dimen/padding_margin_normal"
+                    android:paddingBottom="@dimen/padding_margin_normal"
+                    android:paddingEnd="@dimen/padding_margin_normal"
+                    android:paddingStart="@dimen/padding_margin_normal"
+                    android:id="@+id/profileBtnGantiPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/background_rounded_green">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/gantipassword"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/normal_font_size"
+                        app:fontFamily="@font/gotham_bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/padding_margin_normal"
+                    android:layout_marginRight="@dimen/padding_margin_normal"
+                    android:layout_marginTop="@dimen/padding_margin_medium"
+                    android:paddingTop="@dimen/padding_margin_normal"
+                    android:paddingBottom="@dimen/padding_margin_normal"
+                    android:paddingEnd="@dimen/padding_margin_normal"
+                    android:paddingStart="@dimen/padding_margin_normal"
+                    android:id="@+id/profileBtnSimpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/background_rounded_green">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/simpan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/normal_font_size"
+                        app:fontFamily="@font/gotham_bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/view_content_detail_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/view_content_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="snap"
+            app:titleTextColor="@color/color_text"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:padding="@dimen/padding_margin_normal"
+            android:paddingTop="@dimen/padding_margin_normal"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="105dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:paddingTop="40dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_logo"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nama"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/alamat"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananAlamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nohandphone"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananNoHP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/jenis_paket"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananPaket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/berat"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananBerat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/totalharga"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananHarga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/kurir"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+
+                        android:layout_margin="@dimen/padding_margin_normal"
+                        android:background="@color/colorWhite"
+                        android:textSize="@dimen/normal_smaller_font_size"
+                        android:fontFamily="@font/gotham_book"
+                        android:id="@+id/tvDetailPesananKurir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:paddingBottom="@dimen/padding_margin_normal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/padding_margin_normal"
+                        android:layout_marginRight="@dimen/padding_margin_normal"
+                        android:layout_marginTop="@dimen/padding_margin_medium"
+                        android:paddingTop="@dimen/padding_margin_normal"
+                        android:paddingBottom="@dimen/padding_margin_normal"
+                        android:paddingEnd="@dimen/padding_margin_normal"
+                        android:paddingStart="@dimen/padding_margin_normal"
+                        android:id="@+id/btnDetailPesananTolak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/background_rounded_red">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/tolak"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/padding_margin_normal"
+                        android:layout_marginRight="@dimen/padding_margin_normal"
+                        android:layout_marginTop="@dimen/padding_margin_medium"
+                        android:paddingTop="@dimen/padding_margin_normal"
+                        android:paddingBottom="@dimen/padding_margin_normal"
+                        android:paddingEnd="@dimen/padding_margin_normal"
+                        android:paddingStart="@dimen/padding_margin_normal"
+                        android:id="@+id/btnDetailPesananTerima"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/background_rounded_green">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/terima"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

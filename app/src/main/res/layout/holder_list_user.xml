@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_home_button_pesan_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_margin_normal_thin"
+        android:layout_marginRight="@dimen/padding_margin_normal_thin"
+        android:layout_marginBottom="@dimen/padding_margin_normal"
+        android:background="?attr/selectableItemBackground"
+        android:baselineAligned="false"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_margin_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <ImageView
+                        android:id="@+id/view_holder_list_laundry_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_list_user_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Name"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/normal_font_size"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/gotham_bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_margin_thin"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_list_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                            android:id="@+id/view_holder_list_user_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                            android:id="@+id/view_holder_list_user_alamat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:id="@+id/view_holder_list_user_layout_laundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Bank"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/normal_font_size"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/gotham_bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_list_user_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Rekening"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/normal_font_size"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/gotham_bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_list_user_rekening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:text="BBCA"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/padding_margin_normal_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Paket"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/normal_font_size"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/gotham_bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center_vertical">
+
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:id="@+id/view_holder_list_user_paket_rv"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/view_holder_list_laundry_kurir_status"
+                            android:layout_width="10dp"
+                            android:layout_height="14dp"
+                            android:src="@color/colorGreen"></de.hdodenhof.circleimageview.CircleImageView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/view_holder_list_laundry_kurir_status_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_margin_normal_thin"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Kurir"
+                            android:textColor="@color/color_text"
+                            android:textSize="@dimen/normal_smaller_font_size"
+                            app:fontFamily="@font/gotham_book" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/padding_margin_normal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_marginRight="@dimen/padding_margin_normal_thin"
+                        android:id="@+id/view_holder_list_user_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_rounded_green"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/padding_margin_normal_thin"
+                        android:paddingTop="@dimen/padding_margin_normal_thin"
+                        android:paddingEnd="@dimen/padding_margin_normal_thin"
+                        android:paddingBottom="@dimen/padding_margin_normal_thin">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/updateuser"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/padding_margin_normal_thin"
+                        android:id="@+id/view_holder_list_user_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_rounded_red"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/padding_margin_normal_thin"
+                        android:paddingTop="@dimen/padding_margin_normal_thin"
+                        android:paddingEnd="@dimen/padding_margin_normal_thin"
+                        android:paddingBottom="@dimen/padding_margin_normal_thin">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/deleteuser"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/normal_font_size"
+                            app:fontFamily="@font/gotham_bold" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

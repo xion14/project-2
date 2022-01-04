@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_margin_normal"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="@dimen/padding_margin_normal"
+        android:background="@color/colorWhite"
+        android:textSize="@dimen/normal_medium_font_size"
+        android:fontFamily="@font/gotham_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/konfirmasipesanan"
+        android:textColorHint="@color/color_text"
+        android:textColor="@color/color_text"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/namalaundry"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_nama_laundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/jasakurir"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_kurir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/jenis_paket"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_jenis_paket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/harga_paket"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_harga_paket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/jumlah_paket"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_jumlah_paket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/harga_total"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/dialog_tv_harga_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_text"
+                android:textColor="@color/color_text"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/padding_margin_normal"
+        android:layout_marginRight="@dimen/padding_margin_normal"
+        android:layout_marginTop="@dimen/padding_margin_medium"
+        android:id="@+id/dialog_button_pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_green">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_margin="@dimen/padding_margin_normal"
+            android:textSize="@dimen/normal_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pesan"
+            android:textColor="@color/colorWhite"
+            app:fontFamily="@font/gotham_bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>

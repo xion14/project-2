@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_collection_parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:ignore="UnusedAttribute">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            </androidx.appcompat.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:textSize="@dimen/normal_medium_font_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/login"
+                    android:fontFamily="@font/gotham_bold"
+                    android:textColor="@color/color_black"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:padding="@dimen/padding_margin_normal"
+        android:paddingTop="@dimen/padding_margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_marginLeft="@dimen/padding_margin_normal"
+                android:layout_marginRight="@dimen/padding_margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/normal_smaller_font_size"
+                    android:fontFamily="@font/gotham_book"
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_margin_normal"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="@color/colorWhite"
+                android:textSize="@dimen/normal_smaller_font_size"
+                android:fontFamily="@font/gotham_book"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/padding_margin_normal"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_text"
+            ></View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:id="@+id/loginTvDaftar"
+            android:layout_marginRight="@dimen/padding_margin_normal"
+            android:layout_marginBottom="@dimen/padding_margin_normal"
+            android:textSize="@dimen/normal_smaller_font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/daftar"
+            android:textColor="@color/colorAccent"
+            app:fontFamily="@font/gotham_bold" />
+
+        <RelativeLayout
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_margin_normal_thin"
+            android:background="@drawable/background_rounded_green">
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_margin="@dimen/padding_margin_normal"
+                android:textSize="@dimen/normal_font_size"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login"
+                android:textColor="@color/colorWhite"
+
+                app:fontFamily="@font/gotham_bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_login_daftar"
+            android:layout_marginTop="@dimen/padding_margin_normal"
+            android:textSize="@dimen/normal_smaller_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_black"
+            app:fontFamily="@font/gotham_bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

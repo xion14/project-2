@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fxn769:pix:1.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3113a4fa6d35865b7f76beb849b292c0/jetified-pix-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3113a4fa6d35865b7f76beb849b292c0/jetified-pix-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3113a4fa6d35865b7f76beb849b292c0/jetified-pix-1.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faf22552c5244b2e1038fb7540ae6914/jetified-pix-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faf22552c5244b2e1038fb7540ae6914/jetified-pix-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faf22552c5244b2e1038fb7540ae6914/jetified-pix-1.0.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fxn769/pix/1.0.5/48407787a3929bd608b7fe2cd00060269d54904b/pix-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fxn769/pix/1.0.5/3c073a593047dd206c97a7b1b64d031a1bdf3898/pix-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

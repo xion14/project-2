@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="@dimen/size_elevation_toolbar"
+        android:orientation="horizontal">
+        <id.com.android.laundry.widget.WidgetTabMenu
+            android:id="@+id/view_transaksi_tablayout"
+            style="@style/TabMenu"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@style/TabStyle"
+            app:tabTextColor="@color/color_text_secondary" />
+    </LinearLayout>
+    <id.com.android.laundry.widget.WidgetPaging
+        android:id="@+id/view_transaksi_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
